@@ -3,7 +3,7 @@ FROM 32bit/ubuntu:14.04
 RUN apt-get update -y && \
     apt-get install -y \
     nginx openssh-server supervisor vim \
-    php5-common php5-cli php5-fpm curl
+    php5-common php5-cli php5-fpm curl openssl
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=bin
 
