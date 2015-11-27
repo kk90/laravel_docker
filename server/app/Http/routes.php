@@ -16,6 +16,6 @@ Route::get('/', function () {
 });
 
 Route::get('/time', function () {
-	$milliseconds = round(microtime(true) * 1000);
+	$milliseconds = round(microtime(true));
     return Response::json(array('time' => $milliseconds));;
 });
