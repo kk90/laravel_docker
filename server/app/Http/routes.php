@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/time', function () {
+	$milliseconds = round(microtime(true) * 1000);
+    return Response::json(array('time' => $milliseconds));;
+});
